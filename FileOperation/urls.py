@@ -15,9 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from . import  views as v
+from . import views as v
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^upload/$', v.upload),
+    url(r'^download/$', v.download),
+    url(r'^$', v.index),
+    url('^download/filename=(?P<filename>.{1,500})/$', v.downloadFile)
 ]

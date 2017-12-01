@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function addli(ab,href)
+        {
+            var ul=document.getElementById("projecthome");
+            var obj=document.createElement("li");
+            obj.innerHTML="<a href='"+href+"'>"+ab+"</a>";
+            ul.appendChild(obj);
+        }
+    </script>
+    <meta charset="UTF-8">
+    <title>下载页面</title>
+</head>
+<body>
+<h1>{{download}}</h1>
+<ul >
+    {% for i in dict %}
+    <li><a href={{i.href}}>{{ i.name }}</a></li>
+    {% endfor %}
+</ul>
+</body>
+</html>
