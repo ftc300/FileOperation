@@ -21,6 +21,9 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^upload/$', v.upload),
     url(r'^download/$', v.download),
+    url(r'^api/jsontest/$', v.jsontest),
+    url(r'^api/add_book$', v.add_book),
+    url(r'^api/show_books$', v.show_books),
     url(r'^$', v.index),
-    url('^download/filename=(?P<filename>.{1,500})/$', v.downloadFile)
+    url('^download/(?P<filename>.{1,100})/$', v.downloadFile)
 ]

@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>首页</title>
-</head>
-<body>
-<ul>
-    <li><a href="./upload">upload</a></li>
-    <li><a href="./download">download</a></li>
+{% extends 'base.html' %}
+
+{% block content %}
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="./upload">upload</a></li>
+  <li role="presentation"><a href="./download">download</a></li>
+  <li role="presentation"><a href="./api/jsontest">jsontest</a></li>
 </ul>
-</body>
-</html>
+{% endblock %}
