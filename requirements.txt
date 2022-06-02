@@ -10,7 +10,7 @@ Django==1.8.18
 django-admin-bootstrapped==2.5.7
 django-bootstrap-toolkit==2.15.0
 django-haystack==2.6.1
-html5lib==0.9999999
+html5lib==0.99999999
 idna==2.6
 jieba==0.38
 Jinja2==2.10
